@@ -3,10 +3,74 @@ body {
   background-color: #f0f0ef;
   background-attachment:fixed;
   background-position:center;
-  margin: 10%;
+  margin: 20%;
   margin-top: 24px;
   width: fit-content;
   }
+
+  @font-face{
+    font-family: tiki-island;
+    src: url(assets/aj/Tiki_Island.woff);
+  }
+
+  .lil-page{
+    background-image: url('assets/rainbowstarbg.gif');
+    border-style:double;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color:#ace5ff;
+    position: fixed;
+    float: center;
+  
+    top:10%;
+    height:max-content;
+    padding: 10px;
+    margin-left:15%;
+    margin-right:10%;
+    scrollbar-width: auto;
+    scrollbar-color: rgb(38, 38, 38);
+    scroll-margin: 2px;
+    height:80%;
+    overflow-y:scroll;
+    z-index: 0;
+  }
+  .lil-page a{
+    color:green;
+    z-index: 10;
+  }
+
+  .insidebar{
+    background-image:url('assets/rainbowstarbg.gif');
+    float:left; 
+    padding: 5px;
+    width:20%;
+    height:80%;
+    border-width:6px;
+    border-style:double;
+    border-color: rgb(239, 137, 255);
+    border-radius:5px;
+    position: sticky;
+  }
+  .insidebar .coolbutton{
+    font-family: tiki-island;
+    height: 40px;
+    width:full;
+    background-color: #ddf4ff;
+    border-style: double;
+    border-radius: 6px;
+    border-color: rgb(47, 71, 255);
+  }
+  .insidebar .coolbutton .a:hover{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+  footer {
+    color: grey;
+    text-align: center;
+    text-size-adjust: 75%;
+}
+
   .middle{
   float: center;
   background-color: rgb(245, 245, 245);
@@ -16,7 +80,11 @@ body {
   border: #9dc7db;
   border-style: solid;
   border: 7px;
+  overflow-y: scroll;
   }
+
+
+
   .sidebar{
   border: #000000;
   border-style: double;
@@ -28,12 +96,8 @@ body {
   width: 175px;
   position:fixed;
   }
-  footer {
-    color: grey;
-    text-align: center;
-    text-size-adjust: 75%;
-}
-.rainbow-text:hover {
+
+.rainbow-text a:hover {
   background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
   text-align: center;
   background-size: 800% 800%;
