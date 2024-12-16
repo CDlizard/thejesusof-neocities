@@ -3,9 +3,8 @@ body {
   background-color: #f0f0ef;
   background-attachment:fixed;
   background-position:center;
-  margin: 20%;
-  margin-top: 24px;
-  width: fit-content;
+  margin: 10%;
+  max-width: 70%;
   }
 
   @font-face{
@@ -21,11 +20,9 @@ body {
     border-color:#ace5ff;
     position: fixed;
     float: center;
-  
-    top:10%;
-    height:max-content;
+    top:5%;
     padding: 10px;
-    margin-left:15%;
+    margin-left:20%;
     margin-right:10%;
     scrollbar-width: auto;
     scrollbar-color: rgb(38, 38, 38);
@@ -43,13 +40,20 @@ body {
     background-image:url('assets/rainbowstarbg.gif');
     float:left; 
     padding: 5px;
-    width:20%;
+    width:18%;
     height:80%;
+    top:5%;
+
     border-width:6px;
     border-style:double;
     border-color: rgb(239, 137, 255);
     border-radius:5px;
-    position: sticky;
+
+    border-top-color: #ace5ff;
+
+    overflow-y:scroll;
+    position: fixed;
+    z-index: 10;
   }
   .insidebar .coolbutton{
     font-family: tiki-island;
@@ -57,11 +61,13 @@ body {
     width:full;
     background-color: #ddf4ff;
     border-style: double;
-    border-radius: 6px;
+    border-radius: 5px;
+    border-width:6px;
     border-color: rgb(47, 71, 255);
   }
   .insidebar .coolbutton .a:hover{
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+    background-clip: text;
     color: transparent;
     
   }
@@ -70,32 +76,6 @@ body {
     text-align: center;
     text-size-adjust: 75%;
 }
-
-  .middle{
-  float: center;
-  background-color: rgb(245, 245, 245);
-  height: 600px;
-  width: 680px;
-  padding: 10px;
-  border: #9dc7db;
-  border-style: solid;
-  border: 7px;
-  overflow-y: scroll;
-  }
-
-
-
-  .sidebar{
-  border: #000000;
-  border-style: double;
-  border: 10px;
-  float: right;
-  background-color: rgb(245, 245, 245);
-  right: 15%;
-  top: 20%;
-  width: 175px;
-  position:fixed;
-  }
 
 .rainbow-text a:hover {
   background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
