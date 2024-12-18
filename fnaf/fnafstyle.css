@@ -1,17 +1,25 @@
+/*OK SO WHAT'S SUPER COOL IS THAT YOU CAN CHANGE THE COLORS OF WHAT THINGS ARE
+AND IF YOU CHANGE THEM HERE THEY'LL CHANGE THROUGH THE WHOLEEEEE THING. SO YOU DONT HAVE TO
+BE TEDIOUS ABOUT CHANGING EACH INDIVIDUAL THING HEHE
+ALSO DONT TOUCH THE FIRST SET OF COLORS CUS I LIKE THEM THERE ... THEYRE IMPORTANT 2 ME*/
 :root{
-  --primarycolor:rgb(126, 150, 255);
-  --backgroundcolor:rgb(182, 195, 255);
-  --primarydarker:rgb(32, 54, 156);
-  --borderdark:rgb(12, 32, 121);
+  --charcoalblack:rgb(13, 13, 13);
+  --trueblood:rgb(66, 0, 0);
+  --pizzariared:rgb(137, 0, 0);
+  --whitebunny:rgb(221, 221, 221);
 
-  --textcolor:rgb(26, 25, 93);
-  --textsecondcolor:rgb(8, 7, 56);
+  --backgroundcolor:var(--whitebunny);
+  --bordercolor:var(--pizzariared);
+  --textcolor:var(--charcoalblack);
+  --textsecondcoloar:var(--trueblood);
 }
+
 
 body{
   margin-left:10%;
   margin-right:10%;
   min-height:100%;
+  background-color: var(--charcoalblack);
   color:var(--textcolor);
 }
 body a{
@@ -19,7 +27,7 @@ body a{
 }
 hr{
   border-style: dashed;
-  border-color: var(--borderdark);
+  border-color: var(--bordercolor);
 }
 
 .main-container{
@@ -36,7 +44,7 @@ hr{
   border-radius:10px;
   border-width: 5px;
   border-style:double;
-  border-color:var(--borderdark);
+  border-color:var(--bordercolor);
 }
 .main-container img{
   max-width: 100%;
@@ -50,10 +58,10 @@ hr{
   float:left;
   margin-right:10px;
   
-  border-right-color: var(--borderdark);
+  border-right-color: var(--bordercolor);
   border-right-width: 1px;
   border-right-style: dashed;
-  border-bottom-color: var(--borderdark);
+  border-bottom-color: var(--bordercolor);
   border-bottom-width: 1px;
   border-bottom-style: dashed;
 }
