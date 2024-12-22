@@ -4,17 +4,21 @@ BE TEDIOUS ABOUT CHANGING EACH INDIVIDUAL THING HEHE
 ALSO DONT TOUCH THE FIRST SET OF COLORS CUS I LIKE THEM THERE ... THEYRE IMPORTANT 2 ME*/
 :root{
   --charcoalblack:rgb(13, 13, 13);
-  --trueblood:rgb(66, 0, 0);
+  --trueblood:rgb(83, 0, 0);
   --pizzariared:rgb(137, 0, 0);
   --whitebunny:rgb(221, 221, 221);
+
+  --fredbearyellow:rgb(195, 155, 7);
+  --fredbearpurple:rgb(43, 12, 45);
 
   --backgroundcolor:var(--whitebunny);
   --bordercolor:var(--pizzariared);
   --textcolor:var(--charcoalblack);
-  --textsecondcoloar:var(--trueblood);
+  --textsecondcolor:var(--pizzariared);
 }
-
-
+ul {
+  list-style-image: url('assets/FNaF4-BigStar.gif');
+}
 body{
   margin-left:10%;
   margin-right:10%;
@@ -66,7 +70,24 @@ hr{
   border-bottom-style: dashed;
 }
 
+.menu-div{
+  width: 100%;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  column-gap: 10px;
+}
+
 .main-containr .middlecenter{
   width:100%;
   padding:10%;
+}
+.main-container footer{
+  border-top-color: var(--charcoalblack);
+  border-top-style: dashed;
+  border-top-width: 2px;
+  padding-top:5px;
+  text-align: center;
 }
